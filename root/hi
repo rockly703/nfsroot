@@ -1,0 +1,139 @@
+Linux version 2.6.28.6 (root@Xspace) (gcc version 4.4.3 (ctng-1.6.1) ) #61 Sat Jul 19 16:53:40 CST 2014
+CPU: ARMv6-compatible processor [410fb766] revision 6 (ARMv7), cr=00c5387f
+CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+Machine: SMDK6410
+Memory policy: ECC disabled, Data cache writeback
+On node 0 totalpages: 65536
+free_area_init_node: node 0, pgdat c0371178, node_mem_map c03a9000
+  DMA zone: 512 pages used for memmap
+  DMA zone: 0 pages reserved
+  DMA zone: 65024 pages, LIFO batch:15
+  Normal zone: 0 pages used for memmap
+  Movable zone: 0 pages used for memmap
+CPU S3C6410 (id 0x36410101)
+s3c6410_init_clocks: initialising clocks
+S3C24XX Clocks, (c) 2004 Simtec Electronics
+s3c6400_setup_clocks: registering clocks
+s3c6400_setup_clocks: clkdiv0 = 01043310
+s3c6400_setup_clocks: xtal is 12000000
+S3C64XX: PLL settings, A=532000000, M=532000000, E=24000000
+S3C64XX: HCLKx2=266000000, HCLK=133000000, PCLK=66500000
+div1: 00000555
+mout_apll: source is fout_apll (1), rate is 532000000
+mout_epll: source is fout_epll (1), rate is 24000000
+mout_mpll: source is mpll (1), rate is 532000000
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+mmc_bus: source is dout_mpll (1), rate is 44333333
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+mmc_bus: source is dout_mpll (1), rate is 44333333
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+mmc_bus: source is dout_mpll (1), rate is 44333333
+usb-host-bus: source is mout_epll (0), rate is 24000000
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+uclk1: source is dout_mpll (1), rate is 66500000
+spi-bus: source is mout_epll (0), rate is 24000000
+spi-bus: source is mout_epll (0), rate is 24000000
+audio-bus0: source is mout_epll (0), rate is 24000000
+audio-bus1: source is mout_epll (0), rate is 24000000
+audio-bus2: source is mout_epll (0), rate is 24000000
+irda-bus: source is mout_epll (0), rate is 24000000
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 65024
+Kernel command line: root=/dev/nfs nfsroot=192.168.199.104:/nfsroot ip=192.168.199.12:192.168.199.104:192.168.199.1:255.255.255.0:www.qq.com:eth0:off console=ttySAC0
+s3c64xx_init_irq: initialising interrupts
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+timer tcon=00500000, tcnt b98b, tcfg 00000601,00000000, usec 00001719
+Console: colour dummy device 80x30
+s3c24xx_serial_init_ports: initialising ports=4...
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+console [ttySAC0] enabled
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 256MB = 256MB total
+Memory: 255872KB available (3212K code, 368K data, 124K init)
+SLUB: Genslabs=12, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Calibrating delay loop... 530.84 BogoMIPS (lpj=1327104)
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+net_namespace: 316 bytes
+NET: Registered protocol family 16
+S3C6410: Initialising architecture
+S3C DMA-pl080 Controller Driver, (c) 2006-2007 Samsung Electronics
+Total 32 DMA channels will be initialized.
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 5, 163840 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+NET: Registered protocol family 1
+NetWinder Floating Point Emulator V0.97 (double precision)
+SGI XFS with ACLs, security attributes, realtime, large block numbers, debug enabled
+SGI XFS Quota Management subsystem
+msgmni has been set to 500
+alg: No test for stdrng (krng)
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+s3c6400-uart.0: s3c2410_serial0 at MMIO 0x7f005000 (irq = 16) is a S3C6400/10
+s3c6400-uart.1: s3c2410_serial1 at MMIO 0x7f005400 (irq = 20) is a S3C6400/10
+s3c6400-uart.2: s3c2410_serial2 at MMIO 0x7f005800 (irq = 24) is a S3C6400/10
+s3c6400-uart.3: s3c2410_serial3 at MMIO 0x7f005c00 (irq = 28) is a S3C6400/10
+brd: module loaded
+loop: module loaded
+dm9000 Ethernet Driver
+dm9000: dm9000_probe, init GPIO/EINT.
+dm9000: dm9000_probe2
+dm9000: dm9000_probe3
+eth%d: con201 Invalid ethernet MAC address. using default config,  Please set using ifconfig
+eth0: dm9000 at f7b00300,f7b00304 IRQ 108 MAC: 00:e0:4a:bc:15:e7
+S3C NAND Driver, (c) 2008 Samsung Electronics
+S3C NAND Driver is using software ECC.
+NAND device: Manufacturer ID: 0xec, Chip ID: 0xd5 (Samsung NAND 2GiB 3,3V 8-bit)
+NAND bus width 8 instead 16 bit
+No NAND device found!!!
+mice: PS/2 mouse device common for all mice
+S3C24XX RTC, (c) 2004,2006 Simtec Electronics
+s3c2410_rtc: tick irq 34, alarm irq 92
+s3c2410-rtc s3c2410-rtc: rtc disabled, re-enabling
+s3c2410-rtc s3c2410-rtc: rtc core: registered s3c as rtc0
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+s3c-sdhci s3c-sdhci.0: clock source 0: hsmmc (133000000 Hz)
+s3c-sdhci s3c-sdhci.0: clock source 1: hsmmc (133000000 Hz)
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+s3c-sdhci s3c-sdhci.0: clock source 2: mmc_bus (44333333 Hz)
+[SDHCI]to add external irq as a card detect signal......
+[SDHCI]if (pdata->cfg_ext_cd)......
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+mmc0: SDHCI controller on samsung-hsmmc [s3c-sdhci.0] using ADMA
+[SDHCI]request_irq......
+sdhci: card inserted.
+s3c-sdhci s3c-sdhci.1: clock source 0: hsmmc (133000000 Hz)
+s3c-sdhci s3c-sdhci.1: clock source 1: hsmmc (133000000 Hz)
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+s3c-sdhci s3c-sdhci.1: clock source 2: mmc_bus (44333333 Hz)
+[SDHCI]to add external irq as a card detect signal......
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+mmc1: SDHCI controller on samsung-hsmmc [s3c-sdhci.1] using ADMA
+TCP cubic registered
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+s3c2410-rtc s3c2410-rtc: setting system clock to 2001-07-19 08:20:08 UTC (995530808)
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+mmc0: new SD card at address a4c7
+mmcblk0: mmc0:a4c7 SD02G 1.84 GiB 
+ mmcblk0: unknown partition table
+s3c64xx_clk_doutmpll_get_rate: parent is 532000000
+eth0: link down
+IP-Config: Unable to set interface netmask (-22).
+Looking up port of RPC 100003/2 on 192.168.199.104
+eth0: link up, 100Mbps, full-duplex, lpa 0xC5E1
+Looking up port of RPC 100005/1 on 192.168.199.104
+VFS: Mounted root (nfs filesystem).
+Freeing init memory: 124K

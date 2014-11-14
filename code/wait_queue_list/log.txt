@@ -1,0 +1,12 @@
+[root@6410 wait_queue]# in sleep!
+BUG: scheduling while atomic: read/1009/0x00000002
+Modules linked in: cdev [last unloaded: cdev]
+[<c0179668>] (unwind_backtrace+0x0/0xf0) from [<c051d1d8>] (schedule+0x78/0x398)
+[<c051d1d8>] (schedule+0x78/0x398) from [<c051d8a0>] (schedule_timeout+0x16c/0x1a4)
+[<c051d8a0>] (schedule_timeout+0x16c/0x1a4) from [<bf006238>] (my_read+0xb0/0x134 [cdev])
+[<bf006238>] (my_read+0xb0/0x134 [cdev]) from [<c01e5b78>] (vfs_read+0xa8/0x130)
+one_wire_status: 2
+[<c01e5b78>] (vfs_read+0xa8/0x130) from [<c01e5cac>] (sys_read+0x3c/0x68)
+[<c01e5cac>] (sys_read+0x3c/0x68) from [<c0173fc0>] (ret_fast_syscall+0x0/0x30)
+one_wire_status: 2
+
